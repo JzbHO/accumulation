@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+<h1>Octopus</h1> <br/>
+
+<h1>规则参数文件上传</h1>
+
+<form th:action="@{/import}" method="post" enctype="multipart/form-data" >
+
+    <input type="file" th:name="file"  multiple="multiple" />
+
+    <input th:type="submit" value="Import" />
+
+
+</form>
